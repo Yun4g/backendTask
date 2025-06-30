@@ -1,13 +1,10 @@
 
-const errorHandler = (error, res, req)=>{
-    console.log(error)
-
+const errorHandler = (error, req, res, next)=>{
+    console.error(err.stack);
     res.status(500).json({
         message : "internal server error",
         error: err.message 
     })
-    
-      console.error(err.stack);
  
 }
 
