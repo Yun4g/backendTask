@@ -23,7 +23,7 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
 app.use(cookieParser());
-// app.use(loggerMiddleware) 
+app.use(loggerMiddleware) 
 
 app.use(AuthMiddleWare)
 app.use(errorHandler)
