@@ -32,7 +32,7 @@ const swaggerDefinition = {
 
 const options = {
   swaggerDefinition,
-  apis: ['./routes/*.js'], // <-- path to your route files with Swagger comments
+  apis: ['./src/index.js'], 
 };
 
 const swaggerSpec = swaggerJSDoc(options);
