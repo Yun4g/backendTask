@@ -1,7 +1,7 @@
 import jwt from "jsonwebtoken";
 
 const AuthMiddleWare = (req, res, next) => {
-  if (req.path === "/api/auth/login" || req.path === "/api/auth/register") {
+  if (req.path === "/api/auth/login" || req.path === "/api/auth/register" ||  req.path.startsWith("/api-docs")  ) {
     return next();
   }
 
